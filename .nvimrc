@@ -27,6 +27,7 @@ call plug#end()
 colorscheme purify
 
 "Coc
+"{"clangd.path": "/Users/rvernon/.config/coc/extensions/coc-clangd-data/install/12.0.0/clangd_12.0.0/bin/clangd"} in /Users/rvernon/.config/nvim/coc-settings.json (CocConfig)
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<CR>"
 inoremap <expr> <Space> pumvisible() ? "\<C-y> " : "\<Space>"
 inoremap <silent><expr> <Tab> pumvisible() ? "\<C-n>" : "\<Tab>"
