@@ -4,6 +4,7 @@ set autoindent
 set nobackup
 set noswapfile
 set nowrap
+set showcmd
 
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
 set list
