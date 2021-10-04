@@ -1,6 +1,13 @@
 set nu
 lang en_US
 
+set noswapfile
+set nowrap
+
+set tabstop=4
+set shiftwidth=4
+set scrolloff=7
+
 "видимые табы и пробелы
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
 set list
@@ -37,3 +44,14 @@ map <C-n> :NERDTreeToggle<CR>
 
 vmap // <plug>NERDCommenterToggle
 nmap // <plug>NERDCommenterToggle
+
+noremap <F12> :bo :tabnew<CR>:terminal<CR>i
+tnoremap <ESC> <C-\><C-n>
+nmap <C-x> <C-w>x
+
+augroup go
+    autocmd!
+    autocmd FileType go inoremap {<CR> <space>{<CR>}<Esc>O
+augroup END
+
+"noremap zf <S-v>}zf
