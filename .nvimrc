@@ -7,6 +7,7 @@ set nowrap
 set tabstop=4
 set shiftwidth=4
 set scrolloff=7
+set siso=10
 
 "видимые табы и пробелы
 set listchars=eol:¬,tab:>·,trail:~,extends:>,precedes:<
