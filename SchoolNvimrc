@@ -1,12 +1,12 @@
 set nu
-lang en_US
-
 set noswapfile
 set nowrap
 
+lang en_US
+
 set tabstop=4
 set shiftwidth=4
-set scrolloff=7
+set scrolloff=5
 set siso=10
 
 "видимые табы и пробелы
@@ -20,7 +20,7 @@ nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-l> <C-w>l
 
-inoremap {<CR> <CR>{<CR>}<Esc>O
+inoremap {<CR> <space>{<CR>}<Esc>O
 
 call plug#begin('~/.vim/plugged')
 
@@ -28,6 +28,7 @@ Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'kyoz/purify', { 'rtp': 'vim' }
+Plug 'fatih/vim-go'
 
 call plug#end()
 
@@ -49,10 +50,5 @@ nmap // <plug>NERDCommenterToggle
 noremap <F12> :bo :tabnew<CR>:terminal<CR>i
 tnoremap <ESC> <C-\><C-n>
 nmap <C-x> <C-w>x
-
-augroup go
-    autocmd!
-    autocmd FileType go inoremap {<CR> <space>{<CR>}<Esc>O
-augroup END
 
 "noremap zf <S-v>}zf
